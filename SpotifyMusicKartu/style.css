@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+    text-shadow: 3px 3px 5px black;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-image: linear-gradient(rgb(18,18,18), black);
+}
+
+.card-container:hover {
+    transition: ease-in-out;
+    transition-duration: .2s;
+    cursor: default;
+    
+    background-color: rgb(33,33,33);
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgb(15, 15, 15);
+    margin: 8px;
+    height: 70px;
+    width: 700px;
+    color: white;
+    border-radius: 8px;
+
+    box-shadow: 4px 4px 5px black;
+}
+
+.card-container i{
+    font-size: 30px;
+}
+
+.card-container p:active {
+    color: rgb(29,185,84);
+}
+
+.card-container i:hover {
+    color: rgb(29,185,84);
+    cursor: pointer;
+}
+
+.card-container i:active{
+    color: rgb(26,166,75);
+}
+
+
+
+.cover-song{
+    width: 50px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.meta {
+    justify-content: start;
+    align-items: start;
+}
+
+.judul-lagu{
+    font-weight: 600;
+}
+
+.artist-lagu{
+    font-size: smaller;
+}
+
+.artist-lagu:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    
+    position: absolute;
+}
+
+.dropdown-btn{
+    border: 1px  solid rgb(19, 19, 19);
+    border-radius: 8px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: small;
+    width: 150px;;
+    height: 40px;
+
+    box-shadow: 5px 5px black;
+}
+
+.dropdown-btn:hover{
+    background-color: rgb(55, 55, 55);
+    
+}
+
+.dropdown-btn:active{
+    color: rgb(29,185,84);
+}
+
+.dropdown-container:hover .dropdown-content{
+    display: block;
+}
